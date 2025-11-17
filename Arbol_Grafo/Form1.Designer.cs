@@ -253,14 +253,14 @@
             // 
             // txtResultadoConexo
             // 
-            this.txtResultadoConexo.Location = new System.Drawing.Point(343, 332);
+            this.txtResultadoConexo.Location = new System.Drawing.Point(305, 332);
             this.txtResultadoConexo.Name = "txtResultadoConexo";
-            this.txtResultadoConexo.Size = new System.Drawing.Size(100, 20);
+            this.txtResultadoConexo.Size = new System.Drawing.Size(129, 20);
             this.txtResultadoConexo.TabIndex = 11;
             // 
             // btnEsConexo
             // 
-            this.btnEsConexo.Location = new System.Drawing.Point(350, 286);
+            this.btnEsConexo.Location = new System.Drawing.Point(328, 290);
             this.btnEsConexo.Name = "btnEsConexo";
             this.btnEsConexo.Size = new System.Drawing.Size(84, 36);
             this.btnEsConexo.TabIndex = 10;
@@ -269,14 +269,14 @@
             // 
             // txtAdyacencias
             // 
-            this.txtAdyacencias.Location = new System.Drawing.Point(222, 332);
+            this.txtAdyacencias.Location = new System.Drawing.Point(148, 332);
             this.txtAdyacencias.Name = "txtAdyacencias";
-            this.txtAdyacencias.Size = new System.Drawing.Size(100, 20);
+            this.txtAdyacencias.Size = new System.Drawing.Size(144, 20);
             this.txtAdyacencias.TabIndex = 9;
             // 
             // btnMostrarAdyacencias
             // 
-            this.btnMostrarAdyacencias.Location = new System.Drawing.Point(219, 286);
+            this.btnMostrarAdyacencias.Location = new System.Drawing.Point(180, 290);
             this.btnMostrarAdyacencias.Name = "btnMostrarAdyacencias";
             this.btnMostrarAdyacencias.Size = new System.Drawing.Size(84, 36);
             this.btnMostrarAdyacencias.TabIndex = 8;
@@ -302,7 +302,7 @@
             // 
             // nudPeso
             // 
-            this.nudPeso.Location = new System.Drawing.Point(219, 260);
+            this.nudPeso.Location = new System.Drawing.Point(293, 235);
             this.nudPeso.Name = "nudPeso";
             this.nudPeso.Size = new System.Drawing.Size(120, 20);
             this.nudPeso.TabIndex = 5;
