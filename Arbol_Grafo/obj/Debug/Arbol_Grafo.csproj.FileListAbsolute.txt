@@ -1,0 +1,11 @@
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\bin\Debug\Arbol_Grafo.exe.config
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\bin\Debug\Arbol_Grafo.exe
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\bin\Debug\Arbol_Grafo.pdb
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\obj\Debug\Arbol_Grafo.csproj.AssemblyReference.cache
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\obj\Debug\Arbol_Grafo.Properties.Resources.resources
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\obj\Debug\Arbol_Grafo.csproj.GenerateResource.cache
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\obj\Debug\Arbol_Grafo.csproj.CoreCompileInputs.cache
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\obj\Debug\Arbol_Grafo.exe
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\obj\Debug\Arbol_Grafo.pdb
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\obj\Debug\Arbol_Grafo.exe.config
+C:\Users\Naza\Desktop\Programacion_Estructurada\ProgramacionEstructuradaG1S12\Arbol_Grafo\Arbol_Grafo\obj\Debug\Arbol_Grafo.Form1.resources
