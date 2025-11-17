@@ -42,14 +42,27 @@
             this.txtNombreNodo = new System.Windows.Forms.TextBox();
             this.tvArbolOrganizacional = new System.Windows.Forms.TreeView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.txtNombreEdificio = new System.Windows.Forms.TextBox();
-            this.btnAgregarEdificio = new System.Windows.Forms.Button();
-            this.lstEdificios = new System.Windows.Forms.ListBox();
-            this.cmbOrigen = new System.Windows.Forms.ComboBox();
+            this.txtDistanciaTotal = new System.Windows.Forms.TextBox();
+            this.txtRutaCorta = new System.Windows.Forms.TextBox();
+            this.btnCalcularRuta = new System.Windows.Forms.Button();
+            this.cmbDestinoRuta = new System.Windows.Forms.ComboBox();
+            this.cmbOrigenRuta = new System.Windows.Forms.ComboBox();
+            this.txtResultadoConexo = new System.Windows.Forms.TextBox();
+            this.btnEsConexo = new System.Windows.Forms.Button();
+            this.txtAdyacencias = new System.Windows.Forms.TextBox();
+            this.btnMostrarAdyacencias = new System.Windows.Forms.Button();
+            this.lstConexiones = new System.Windows.Forms.ListBox();
+            this.btnAgregarConexion = new System.Windows.Forms.Button();
+            this.nudPeso = new System.Windows.Forms.NumericUpDown();
             this.cmbDestino = new System.Windows.Forms.ComboBox();
+            this.cmbOrigen = new System.Windows.Forms.ComboBox();
+            this.lstEdificios = new System.Windows.Forms.ListBox();
+            this.btnAgregarEdificio = new System.Windows.Forms.Button();
+            this.txtNombreEdificio = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -59,7 +72,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(346, 389);
+            this.tabControl1.Size = new System.Drawing.Size(457, 389);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -78,7 +91,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(338, 363);
+            this.tabPage1.Size = new System.Drawing.Size(449, 363);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Arbol";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -174,6 +187,18 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.txtDistanciaTotal);
+            this.tabPage2.Controls.Add(this.txtRutaCorta);
+            this.tabPage2.Controls.Add(this.btnCalcularRuta);
+            this.tabPage2.Controls.Add(this.cmbDestinoRuta);
+            this.tabPage2.Controls.Add(this.cmbOrigenRuta);
+            this.tabPage2.Controls.Add(this.txtResultadoConexo);
+            this.tabPage2.Controls.Add(this.btnEsConexo);
+            this.tabPage2.Controls.Add(this.txtAdyacencias);
+            this.tabPage2.Controls.Add(this.btnMostrarAdyacencias);
+            this.tabPage2.Controls.Add(this.lstConexiones);
+            this.tabPage2.Controls.Add(this.btnAgregarConexion);
+            this.tabPage2.Controls.Add(this.nudPeso);
             this.tabPage2.Controls.Add(this.cmbDestino);
             this.tabPage2.Controls.Add(this.cmbOrigen);
             this.tabPage2.Controls.Add(this.lstEdificios);
@@ -182,56 +207,151 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(338, 363);
+            this.tabPage2.Size = new System.Drawing.Size(449, 363);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Grafo";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // txtNombreEdificio
+            // txtDistanciaTotal
             // 
-            this.txtNombreEdificio.Location = new System.Drawing.Point(47, 22);
-            this.txtNombreEdificio.Name = "txtNombreEdificio";
-            this.txtNombreEdificio.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreEdificio.TabIndex = 0;
+            this.txtDistanciaTotal.Location = new System.Drawing.Point(22, 316);
+            this.txtDistanciaTotal.Name = "txtDistanciaTotal";
+            this.txtDistanciaTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtDistanciaTotal.TabIndex = 16;
             // 
-            // btnAgregarEdificio
+            // txtRutaCorta
             // 
-            this.btnAgregarEdificio.Location = new System.Drawing.Point(47, 48);
-            this.btnAgregarEdificio.Name = "btnAgregarEdificio";
-            this.btnAgregarEdificio.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregarEdificio.TabIndex = 1;
-            this.btnAgregarEdificio.Text = "Agregar";
-            this.btnAgregarEdificio.UseVisualStyleBackColor = true;
+            this.txtRutaCorta.Location = new System.Drawing.Point(22, 290);
+            this.txtRutaCorta.Name = "txtRutaCorta";
+            this.txtRutaCorta.Size = new System.Drawing.Size(100, 20);
+            this.txtRutaCorta.TabIndex = 15;
             // 
-            // lstEdificios
+            // btnCalcularRuta
             // 
-            this.lstEdificios.FormattingEnabled = true;
-            this.lstEdificios.Location = new System.Drawing.Point(48, 110);
-            this.lstEdificios.Name = "lstEdificios";
-            this.lstEdificios.Size = new System.Drawing.Size(120, 95);
-            this.lstEdificios.TabIndex = 2;
+            this.btnCalcularRuta.Location = new System.Drawing.Point(22, 261);
+            this.btnCalcularRuta.Name = "btnCalcularRuta";
+            this.btnCalcularRuta.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcularRuta.TabIndex = 14;
+            this.btnCalcularRuta.Text = "Calcular ruta";
+            this.btnCalcularRuta.UseVisualStyleBackColor = true;
             // 
-            // cmbOrigen
+            // cmbDestinoRuta
             // 
-            this.cmbOrigen.FormattingEnabled = true;
-            this.cmbOrigen.Location = new System.Drawing.Point(48, 227);
-            this.cmbOrigen.Name = "cmbOrigen";
-            this.cmbOrigen.Size = new System.Drawing.Size(121, 21);
-            this.cmbOrigen.TabIndex = 3;
+            this.cmbDestinoRuta.FormattingEnabled = true;
+            this.cmbDestinoRuta.Location = new System.Drawing.Point(22, 234);
+            this.cmbDestinoRuta.Name = "cmbDestinoRuta";
+            this.cmbDestinoRuta.Size = new System.Drawing.Size(121, 21);
+            this.cmbDestinoRuta.TabIndex = 13;
+            // 
+            // cmbOrigenRuta
+            // 
+            this.cmbOrigenRuta.FormattingEnabled = true;
+            this.cmbOrigenRuta.Location = new System.Drawing.Point(22, 207);
+            this.cmbOrigenRuta.Name = "cmbOrigenRuta";
+            this.cmbOrigenRuta.Size = new System.Drawing.Size(121, 21);
+            this.cmbOrigenRuta.TabIndex = 12;
+            // 
+            // txtResultadoConexo
+            // 
+            this.txtResultadoConexo.Location = new System.Drawing.Point(343, 332);
+            this.txtResultadoConexo.Name = "txtResultadoConexo";
+            this.txtResultadoConexo.Size = new System.Drawing.Size(100, 20);
+            this.txtResultadoConexo.TabIndex = 11;
+            // 
+            // btnEsConexo
+            // 
+            this.btnEsConexo.Location = new System.Drawing.Point(350, 286);
+            this.btnEsConexo.Name = "btnEsConexo";
+            this.btnEsConexo.Size = new System.Drawing.Size(84, 36);
+            this.btnEsConexo.TabIndex = 10;
+            this.btnEsConexo.Text = "Verificar si es conexo";
+            this.btnEsConexo.UseVisualStyleBackColor = true;
+            // 
+            // txtAdyacencias
+            // 
+            this.txtAdyacencias.Location = new System.Drawing.Point(222, 332);
+            this.txtAdyacencias.Name = "txtAdyacencias";
+            this.txtAdyacencias.Size = new System.Drawing.Size(100, 20);
+            this.txtAdyacencias.TabIndex = 9;
+            // 
+            // btnMostrarAdyacencias
+            // 
+            this.btnMostrarAdyacencias.Location = new System.Drawing.Point(219, 286);
+            this.btnMostrarAdyacencias.Name = "btnMostrarAdyacencias";
+            this.btnMostrarAdyacencias.Size = new System.Drawing.Size(84, 36);
+            this.btnMostrarAdyacencias.TabIndex = 8;
+            this.btnMostrarAdyacencias.Text = "Mostrar Adyacencias";
+            this.btnMostrarAdyacencias.UseVisualStyleBackColor = true;
+            // 
+            // lstConexiones
+            // 
+            this.lstConexiones.FormattingEnabled = true;
+            this.lstConexiones.Location = new System.Drawing.Point(292, 49);
+            this.lstConexiones.Name = "lstConexiones";
+            this.lstConexiones.Size = new System.Drawing.Size(120, 108);
+            this.lstConexiones.TabIndex = 7;
+            // 
+            // btnAgregarConexion
+            // 
+            this.btnAgregarConexion.Location = new System.Drawing.Point(354, 11);
+            this.btnAgregarConexion.Name = "btnAgregarConexion";
+            this.btnAgregarConexion.Size = new System.Drawing.Size(80, 34);
+            this.btnAgregarConexion.TabIndex = 6;
+            this.btnAgregarConexion.Text = "Agregar Conexion";
+            this.btnAgregarConexion.UseVisualStyleBackColor = true;
+            // 
+            // nudPeso
+            // 
+            this.nudPeso.Location = new System.Drawing.Point(219, 260);
+            this.nudPeso.Name = "nudPeso";
+            this.nudPeso.Size = new System.Drawing.Size(120, 20);
+            this.nudPeso.TabIndex = 5;
             // 
             // cmbDestino
             // 
             this.cmbDestino.FormattingEnabled = true;
-            this.cmbDestino.Location = new System.Drawing.Point(48, 264);
+            this.cmbDestino.Location = new System.Drawing.Point(292, 207);
             this.cmbDestino.Name = "cmbDestino";
             this.cmbDestino.Size = new System.Drawing.Size(121, 21);
             this.cmbDestino.TabIndex = 4;
+            // 
+            // cmbOrigen
+            // 
+            this.cmbOrigen.FormattingEnabled = true;
+            this.cmbOrigen.Location = new System.Drawing.Point(292, 175);
+            this.cmbOrigen.Name = "cmbOrigen";
+            this.cmbOrigen.Size = new System.Drawing.Size(121, 21);
+            this.cmbOrigen.TabIndex = 3;
+            // 
+            // lstEdificios
+            // 
+            this.lstEdificios.FormattingEnabled = true;
+            this.lstEdificios.Location = new System.Drawing.Point(22, 51);
+            this.lstEdificios.Name = "lstEdificios";
+            this.lstEdificios.Size = new System.Drawing.Size(181, 108);
+            this.lstEdificios.TabIndex = 2;
+            // 
+            // btnAgregarEdificio
+            // 
+            this.btnAgregarEdificio.Location = new System.Drawing.Point(128, 11);
+            this.btnAgregarEdificio.Name = "btnAgregarEdificio";
+            this.btnAgregarEdificio.Size = new System.Drawing.Size(75, 34);
+            this.btnAgregarEdificio.TabIndex = 1;
+            this.btnAgregarEdificio.Text = "Agregar Edificio";
+            this.btnAgregarEdificio.UseVisualStyleBackColor = true;
+            // 
+            // txtNombreEdificio
+            // 
+            this.txtNombreEdificio.Location = new System.Drawing.Point(22, 22);
+            this.txtNombreEdificio.Name = "txtNombreEdificio";
+            this.txtNombreEdificio.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreEdificio.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 403);
+            this.ClientSize = new System.Drawing.Size(481, 403);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -240,6 +360,7 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,6 +386,18 @@
         private System.Windows.Forms.ListBox lstEdificios;
         private System.Windows.Forms.Button btnAgregarEdificio;
         private System.Windows.Forms.TextBox txtNombreEdificio;
+        private System.Windows.Forms.TextBox txtDistanciaTotal;
+        private System.Windows.Forms.TextBox txtRutaCorta;
+        private System.Windows.Forms.Button btnCalcularRuta;
+        private System.Windows.Forms.ComboBox cmbDestinoRuta;
+        private System.Windows.Forms.ComboBox cmbOrigenRuta;
+        private System.Windows.Forms.TextBox txtResultadoConexo;
+        private System.Windows.Forms.Button btnEsConexo;
+        private System.Windows.Forms.TextBox txtAdyacencias;
+        private System.Windows.Forms.Button btnMostrarAdyacencias;
+        private System.Windows.Forms.ListBox lstConexiones;
+        private System.Windows.Forms.Button btnAgregarConexion;
+        private System.Windows.Forms.NumericUpDown nudPeso;
     }
 }
 
